@@ -8,6 +8,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.safetogether.MainLoginActivity;
 
+import com.example.safetogether.R;
+import com.example.safetogether.guest.LoginActivity;
+import com.example.safetogether.guest.MainActivity;
+import com.example.safetogether.guest.ManualSignupActivity;
+import com.example.safetogether.guest.NotifyActivity;
+import com.example.safetogether.guest.SelfieActivity;
+
 public class SplashActivity extends AppCompatActivity {
 
 //    private static final int DELAY_IN_MILISEC = 2500;
