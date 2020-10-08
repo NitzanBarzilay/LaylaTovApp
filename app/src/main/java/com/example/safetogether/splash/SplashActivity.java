@@ -14,6 +14,7 @@ import com.example.safetogether.R;
 import com.example.safetogether.guest.LoginActivity;
 import com.example.safetogether.guest.MainActivity;
 import com.example.safetogether.guest.ManualSignupActivity;
+import com.example.safetogether.guest.NotifyActivity;
 import com.example.safetogether.guest.SelfieActivity;
 
 public class SplashActivity extends AppCompatActivity {
@@ -28,7 +29,7 @@ public class SplashActivity extends AppCompatActivity {
             @Override
             public void run() {
 
-                Intent intent = new Intent(SplashActivity.this, MainActivity.class);
+                Intent intent = new Intent(SplashActivity.this, NotifyActivity.class);
 //                Intent intent = new Intent(SplashActivity.this, YourActivityHere!.class);
                 startActivity(intent);
                 finish();
