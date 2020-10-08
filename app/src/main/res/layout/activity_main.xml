@@ -6,15 +6,58 @@
     android:layout_height="match_parent"
     tools:context=".MainLoginActivity">
 
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
+    <ImageView
+        android:id="@+id/mainPageLogo"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
+        android:layout_weight=".5"
+        android:contentDescription="@string/layla_tov_logo"
+        android:src="@drawable/logo"
+        app:layout_constraintHorizontal_bias="0.149"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/mainPageChooseVenueText"
+        android:layout_width="279dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="80dp"
+        android:text="@string/choose_the_venue_you_enter"
+        android:textSize="30sp"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/mainPageLogo"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/CrewLoginButton"
+        android:layout_width="169dp"
+        android:layout_height="178dp"
+        android:background="@drawable/button_states"
+        android:text="@string/login_as_crew"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.839"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:text="Hello World!" />
+        app:layout_constraintVertical_bias="0.927" />
+
+    <Button
+        android:id="@+id/guestLoginButton"
+        android:layout_width="169dp"
+        android:layout_height="178dp"
+        android:background="@drawable/button_states"
+        android:text="@string/login_as_guest"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.132"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.927" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

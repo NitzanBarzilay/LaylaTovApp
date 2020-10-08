@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">SafeTogether</string>
+    <string name="login_as_guest">Login as Guest</string>
+    <string name="layla_tov_logo">Layla Tov Logo</string>
+    <string name="login_as_crew">Login as Crew</string>
+    <string name="choose_the_venue_you_enter">Choose the venue you enter:</string>
 </resources>
