@@ -14,7 +14,8 @@ import com.example.safetogether.R;
 
 public class SplashActivity extends AppCompatActivity {
 
-    private static final int DELAY_IN_MILISEC = 2500;
+//    private static final int DELAY_IN_MILISEC = 2500;
+    private static final int DELAY_IN_MILISEC = 100;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
