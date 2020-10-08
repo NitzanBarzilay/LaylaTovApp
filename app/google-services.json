@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "240158662044",
+    "firebase_url": "https://safetogether-633f5.firebaseio.com",
+    "project_id": "safetogether-633f5",
+    "storage_bucket": "safetogether-633f5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:240158662044:android:c494653f70fdee57b3fc59",
+        "android_client_info": {
+          "package_name": "com.example.safetogether"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "240158662044-3d0okj41dt6qgct2npbbjtpnn2hphhu9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYJ0S_RzsBd0DrWM-nOFjNi27vG-a6uxM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "240158662044-3d0okj41dt6qgct2npbbjtpnn2hphhu9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
