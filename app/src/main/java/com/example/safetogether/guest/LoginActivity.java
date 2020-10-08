@@ -28,6 +28,7 @@ public class LoginActivity extends AppCompatActivity {
     private EditText inputEmail;
     private EditText inputPassword;
     private Button loginButton;
+    private Button signupButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +43,7 @@ public class LoginActivity extends AppCompatActivity {
         inputEmail = findViewById(R.id.input_email);
         inputPassword = findViewById(R.id.input_password);
         loginButton = findViewById(R.id.btn_login);
+        signupButton = findViewById(R.id.btn_signup);
     }
 
     private void setOnClickListener() {
@@ -51,6 +53,15 @@ public class LoginActivity extends AppCompatActivity {
                 String email = inputEmail.getText().toString();
                 String password = inputPassword.getText().toString();
                 login(email, password);
+            }
+        });
+
+        signupButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LoginActivity.this, ManualSignupActivity.class);
+                startActivity(intent);
+                finish();
             }
         });
     }
@@ -77,6 +88,5 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
     }
-
 
 }

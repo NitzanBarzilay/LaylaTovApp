@@ -6,6 +6,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -90,8 +91,8 @@ public class ManualSignupActivity extends AppCompatActivity {
                              @Override
                              public void onComplete(@NonNull Task<Void> task) {
                                  if (task.isSuccessful()) {
-                                     Intent intent = new Intent(ManualSignupActivity.this, SelfieActivity.class);
-                                     startActivity(intent);
+//                                     Intent intent = new Intent(ManualSignupActivity.this, SelfieActivity.class);
+//                                     startActivity(intent);
                                      finish();
                                  } else {
                                      Log.d(TAG, "register - onComplete - 2: task failed");
@@ -99,7 +100,8 @@ public class ManualSignupActivity extends AppCompatActivity {
                              }
                          });
                      } else {
-                         Log.d(TAG, "register - onComplete - 1: task failed");
+                         Toast.makeText(ManualSignupActivity.this, "Sign up failed",
+                                 Toast.LENGTH_LONG).show();
                      }
                     }
                 });
