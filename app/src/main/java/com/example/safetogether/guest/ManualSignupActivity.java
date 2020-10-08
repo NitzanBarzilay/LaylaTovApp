@@ -24,6 +24,7 @@ import java.util.HashMap;
 public class ManualSignupActivity extends AppCompatActivity {
 
     private static final String TAG = "ManualSignupActivity";
+
     private FirebaseAuth auth;
     private DatabaseReference reference;
 
@@ -36,10 +37,9 @@ public class ManualSignupActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.manual_signup_activity);
+        setContentView(R.layout.guest_manual_signup_activity);
         initVars();
         setOnClickListener();
-
     }
 
     private void initVars() {
