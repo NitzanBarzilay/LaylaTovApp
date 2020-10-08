@@ -50,9 +50,13 @@ public class LoginActivity extends AppCompatActivity {
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String email = inputEmail.getText().toString();
-                String password = inputPassword.getText().toString();
-                login(email, password);
+//                String email = inputEmail.getText().toString();
+//                String password = inputPassword.getText().toString();
+//                login(email, password);
+                Intent intent = new Intent(LoginActivity.this, SelfieActivity.class);
+                startActivity(intent);
+                finish();
+
             }
         });
 

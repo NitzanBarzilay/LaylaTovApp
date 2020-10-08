@@ -30,6 +30,8 @@ public class SelfieActivity extends AppCompatActivity {
     ImageView imageView;
     Bitmap help1;
 
+    private Button nextButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,6 +56,18 @@ public class SelfieActivity extends AppCompatActivity {
                 }
 
                 //TODO goto next activity and save image
+
+            }
+        });
+
+        nextButton = findViewById(R.id.next);
+        nextButton.setVisibility(View.GONE);
+        nextButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SelfieActivity.this, MainActivity.class);
+                startActivity(intent);
+                finish();
 
             }
         });
@@ -95,6 +109,7 @@ public class SelfieActivity extends AppCompatActivity {
                 help1 = MediaStore.Images.Media.getBitmap(getContentResolver(),file);
 //                imageView.setImageBitmap( help1);
                 imageView.setImageBitmap( ThumbnailUtils.extractThumbnail(help1,help1.getWidth(),help1.getHeight()));
+                nextButton.setVisibility(View.VISIBLE);
             } catch (IOException e) {
                 e.printStackTrace();
             }
